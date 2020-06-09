@@ -75,63 +75,63 @@ class App extends Component {
                 }}><Text>Click</Text></TouchableOpacity>
               </View>
 
-              <Button
-                  title="Show Modal"
-                  onPress={() => {
-                    this.setState({ visible: true });
-                  }}
-              />
+              {/*<Button*/}
+              {/*    title="Show Modal"*/}
+              {/*    onPress={() => {*/}
+              {/*      this.setState({ visible: true });*/}
+              {/*    }}*/}
+              {/*/>*/}
 
-              <Modal
-                  width={0.9}
-                  visible={this.state.visible}
-                  rounded
-                  actionsBordered
-                  onTouchOutside={() => {
-                    this.setState({ defaultAnimationModal: false });
-                  }}
-                  modalTitle={
-                    <ModalTitle
-                        title="Popup Modal - Default Animation"
-                        align="left"
-                    />
-                  }
-                  footer={
-                    <ModalFooter>
-                      <ModalButton
-                          text="CANCEL"
-                          bordered
-                          onPress={() => {
-                            this.setState({ defaultAnimationModal: false });
-                          }}
-                          key="button-1"
-                      />
-                      <ModalButton
-                          text="OK"
-                          bordered
-                          onPress={() => {
-                            this.setState({ defaultAnimationModal: false });
-                          }}
-                          key="button-2"
-                      />
-                      <ModalButton
-                          text="OK"
-                          bordered
-                          onPress={() => {
-                            this.setState({ defaultAnimationModal: false });
-                          }}
-                          key="button-2"
-                      />
-                    </ModalFooter>
-                  }
-              >
-                <ModalContent
-                    style={{ backgroundColor: '#fff' }}
-                >
-                  <Text>Default Animation</Text>
-                  <Text>No onTouchOutside handler. will not dismiss when touch overlay.</Text>
-                </ModalContent>
-              </Modal>
+              {/*<Modal*/}
+              {/*    width={0.9}*/}
+              {/*    visible={this.state.visible}*/}
+              {/*    rounded*/}
+              {/*    actionsBordered*/}
+              {/*    onTouchOutside={() => {*/}
+              {/*      this.setState({ defaultAnimationModal: false });*/}
+              {/*    }}*/}
+              {/*    modalTitle={*/}
+              {/*      <ModalTitle*/}
+              {/*          title="Popup Modal - Default Animation"*/}
+              {/*          align="left"*/}
+              {/*      />*/}
+              {/*    }*/}
+              {/*    footer={*/}
+              {/*      <ModalFooter>*/}
+              {/*        <ModalButton*/}
+              {/*            text="CANCEL"*/}
+              {/*            bordered*/}
+              {/*            onPress={() => {*/}
+              {/*              this.setState({ defaultAnimationModal: false });*/}
+              {/*            }}*/}
+              {/*            key="button-1"*/}
+              {/*        />*/}
+              {/*        <ModalButton*/}
+              {/*            text="OK"*/}
+              {/*            bordered*/}
+              {/*            onPress={() => {*/}
+              {/*              this.setState({ defaultAnimationModal: false });*/}
+              {/*            }}*/}
+              {/*            key="button-2"*/}
+              {/*        />*/}
+              {/*        <ModalButton*/}
+              {/*            text="OK"*/}
+              {/*            bordered*/}
+              {/*            onPress={() => {*/}
+              {/*              this.setState({ defaultAnimationModal: false });*/}
+              {/*            }}*/}
+              {/*            key="button-2"*/}
+              {/*        />*/}
+              {/*      </ModalFooter>*/}
+              {/*    }*/}
+              {/*>*/}
+              {/*  <ModalContent*/}
+              {/*      style={{ backgroundColor: '#fff' }}*/}
+              {/*  >*/}
+              {/*    <Text>Default Animation</Text>*/}
+              {/*    <Text>No onTouchOutside handler. will not dismiss when touch overlay.</Text>*/}
+              {/*  </ModalContent>*/}
+              {/*</Modal>*/}
             </ScrollView>
           </SafeAreaView>
         </>
